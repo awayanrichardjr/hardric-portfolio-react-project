@@ -14,10 +14,25 @@
 .header :where(.buttons) {
   @apply flex items-center justify-center gap-4 flex-wrap;
   button {
+    @apply py-1 px-2 border rounded-xs transition-all;
     a {
       @apply flex items-center justify-center;
-      @apply p-1 border rounded-xs;
     }
+  }
+  button:nth-child(1):hover {
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    transform: translateY(-3px);
+    box-shadow: var(--card-shadow);
+    @apply animate-pulse;
+  }
+  button:nth-child(2):hover {
+    background-color: var(--subject-color);
+    color: white;
+    border-color: var(--subject-color);
+    transform: translateY(-3px);
+    box-shadow: var(--card-shadow);
+    @apply animate-pulse;
   }
 }
 
@@ -28,6 +43,20 @@
   width: clamp(1px, 90vw, 300px);
 
   box-shadow: var(--card-shadow);
+
+  animation: bounceee 2s ease 0s infinite normal none;
+}
+
+@keyframes bounceee {
+  0%,
+  100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 @media screen and (max-width: 768px) {

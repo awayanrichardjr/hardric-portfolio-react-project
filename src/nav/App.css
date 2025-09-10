@@ -4,6 +4,7 @@
   @apply flex justify-between items-center;
   @apply fixed w-screen top-0 left-0;
   background-color: var(--nav-bg);
+  z-index: 1000;
 }
 
 .navigation :where(.logo) {
