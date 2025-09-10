@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.contact {
+  padding-top: 56px;
+  @apply flex flex-col items-center justify-center gap-4;
+  @apply min-h-screen;
+  padding-top: 56px;
+}
+.contact :where(.content) {
+  @apply flex flex-wrap-reverse place-content-center;
+}
+
+.contact :is(.container) {
+  @apply p-4 w-fit;
+}
+.contact :is(.map) {
+  width: clamp(100px, 90vw, 500px);
+  height: 300px;
+  border: none;
+
+  box-shadow: var(--card-shadow);
+}
+
+.contact :is(.contact-details) {
+  @apply flex flex-col gap-4;
+}
+.contact :is(.contact-details) a {
+  @apply flex items-center justify-start gap-2;
+}

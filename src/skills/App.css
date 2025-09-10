@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.skills {
+  @apply flex flex-col items-center justify-center gap-4;
+  @apply min-h-screen m-auto;
+  padding-top: 56px;
+  width: clamp(100px, 90vw, 768px);
+}
+
+.skills :where(img) {
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  width: clamp(1px, 90vw, 70px);
+}
+
+.skills :where(.skills-list) {
+  @apply flex gap-4 flex-wrap items-center justify-center;
+  @apply p-4;
+  li {
+    @apply flex flex-col items-center justify-center;
+  }
+}
+
+.skills :is(h1) {
+  text-align: center;
+}
+
+.skills :is(.description) {
+  text-align: center;
+}

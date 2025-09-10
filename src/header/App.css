@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+.header {
+  @apply flex flex-wrap-reverse place-content-center;
+  @apply min-h-screen;
+  /* padding-top: 56px; */
+}
+
+.header :where(.container) {
+  @apply flex items-start justify-center flex-col;
+  @apply p-4 w-auto h-auto;
+}
+
+.header :where(.buttons) {
+  @apply flex items-center justify-center gap-4 flex-wrap;
+  button {
+    a {
+      @apply flex items-center justify-center;
+      @apply p-1 border rounded-xs;
+    }
+  }
+}
+
+.header :is(img) {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  width: clamp(1px, 90vw, 300px);
+
+  box-shadow: var(--card-shadow);
+}
+
+@media screen and (max-width: 768px) {
+  .header :where(.container) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header :where(.container) .buttons {
+    width: 100%;
+  }
+  .header :where(.container) h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .header :where(.container) .description {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  button {
+    flex-grow: 1;
+  }
+}

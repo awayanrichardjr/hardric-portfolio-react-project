@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+*,
+*::after,
+*::before {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(1px, 8vw, 1rem);
+}
+
+h6 {
+  font-size: clamp(1px, 8vw, 1rem);
+}
+h5 {
+  font-size: clamp(1px, 8vw, 1.5rem);
+}
+h4 {
+  font-size: clamp(1px, 8vw, 2rem);
+}
+h3 {
+  font-size: clamp(1px, 8vw, 2.5rem);
+}
+h2 {
+  font-size: clamp(1px, 8vw, 3rem);
+}
+h1 {
+  font-size: clamp(1px, 8vw, 3.5rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-weight: normal;
+}

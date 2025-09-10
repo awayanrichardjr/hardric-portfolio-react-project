@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+.navigation {
+  @apply flex justify-between items-center;
+  @apply fixed w-screen top-0 left-0;
+  background-color: var(--nav-bg);
+}
+
+.navigation :where(.logo) {
+  @apply flex;
+  a {
+    @apply flex py-4 px-8;
+  }
+}
+
+.navigation :where(.links) {
+  @apply flex;
+  a {
+    @apply flex py-4 px-8;
+  }
+}
+
+.navigation :where(.menu-links) {
+  display: none;
+  position: relative;
+  span {
+    @apply flex items-center justify-center py-4 px-8 cursor-pointer;
+  }
+  a {
+    @apply flex py-4 px-8;
+  }
+  .content {
+    display: none;
+    @apply absolute -bottom-70 right-0;
+    background-color: var(--nav-bg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation :where(.links) {
+    display: none;
+  }
+
+  .navigation :where(.menu-links) {
+    display: flex;
+  }
+}
