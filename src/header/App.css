@@ -18,7 +18,19 @@
     a {
       @apply flex items-center justify-center;
     }
+    span {
+      font-size: 18px;
+    }
   }
+
+  .about-btn {
+  }
+  .download-btn {
+    background-color: var(--subject-color);
+    border-color: var(--subject-color);
+    color: white;
+  }
+
   button:nth-child(1):hover {
     background-color: var(--btn-bg);
     color: var(--btn-color);
@@ -27,9 +39,9 @@
     @apply animate-pulse;
   }
   button:nth-child(2):hover {
-    background-color: var(--subject-color);
-    color: white;
-    border-color: var(--subject-color);
+    background-color: var(--btn-bg);
+    color: var(--download-btn-hover);
+    border-color: var(--btn-bg);
     transform: translateY(-3px);
     box-shadow: var(--card-shadow);
     @apply animate-pulse;

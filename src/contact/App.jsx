@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <section className="contact" id="contact">
-        <h1>Get in touch.</h1>
+        <h1 className="">Get in touch.</h1>
         <div className="content">
           <div className="container">
             <ul className="contact-details">

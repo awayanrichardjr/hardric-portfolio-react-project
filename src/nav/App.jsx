@@ -19,7 +19,9 @@ function App() {
       <nav className="navigation">
         <ul className="logo">
           <li>
-            <a href="#home">Hardric</a>
+            <a href="#home" className="croissant-one-regular">
+              Hardric<b>.</b>
+            </a>
           </li>
         </ul>
         <ul className="links">

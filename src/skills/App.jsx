@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <section className="skills" id="skills">
-        <h1>
+        <h1 className="">
           Skilled in modern frameworks, tools, and web development practices.
         </h1>
 

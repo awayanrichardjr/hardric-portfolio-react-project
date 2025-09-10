@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <section className="expertise" id="expertise">
-        <h1>What I offer.</h1>
+        <h1 className="">What I offer.</h1>
         <div className="container">
           <div className="offer">
             <div>

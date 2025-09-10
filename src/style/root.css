@@ -1,29 +1,29 @@
 :root {
   color-scheme: light dark;
-  color: var(--color-white);
+  color: white;
   background-color: var(--color-zinc-800);
 
   /* variables */
   --nav-bg: var(--color-zinc-800);
   --card-shadow: 0 20px 50px -20px black;
-
-  --btn-bg: var(--color-white);
+  --btn-bg: white;
   --btn-color: var(--color-zinc-800);
   --subject-color: orangered;
+  --download-btn-hover: var(--color-zinc-800);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     color-scheme: light light;
     color: var(--color-zinc-800);
-    background-color: var(--color-white);
+    background-color: white;
 
     /* variables */
-    --nav-bg: var(--color-white);
+    --nav-bg: white;
     --card-shadow: 0 30px 40px -20px rgba(0, 0, 0, 0.3);
-
     --btn-bg: var(--color-zinc-800);
-    --btn-color: var(--color-white);
+    --btn-color: white;
     --subject-color: tomato;
+    --download-btn-hover: white;
   }
 }

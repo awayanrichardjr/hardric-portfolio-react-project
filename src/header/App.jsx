@@ -6,8 +6,8 @@ function App() {
     <>
       <header className="header" id="home">
         <div className="container">
-          <h1>Hi, I am Richard.</h1>
-          <h1>Frontend Developer</h1>
+          <h1 className="croissant-one-regular">Hi, I am Richard.</h1>
+          <h1 className="croissant-one-regular">Frontend Developer</h1>
           <p className="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
             incidunt!
@@ -20,11 +20,14 @@ function App() {
            * buttons
            */}
           <div className="buttons">
-            <button>
+            <button className="about-btn">
               <a href="#about">About me</a>
             </button>
-            <button>
-              <a href="#">
+            <button className="download-btn">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Eq5gi_scvnn4po6PWAlnaXPLu-1mq17Q"
+                download
+              >
                 <span className="material-symbols-rounded">download</span>
                 <p>Download CV</p>
               </a>

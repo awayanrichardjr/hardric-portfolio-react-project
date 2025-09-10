@@ -14,13 +14,6 @@
   border-radius: 1rem;
 
   box-shadow: var(--card-shadow);
-  @apply transition-transform;
-}
-.about :where(img):hover {
-  @apply rotate-x-20;
-  @apply rotate-y-30;
-  @apply -rotate-z-10;
-  scale: 0.95;
 }
 
 .about :where(.container) {
@@ -28,7 +21,7 @@
   @apply p-4 h-auto;
   @apply flex items-start justify-center flex-col;
 }
-.about :where(.container) h3 {
+.about :where(.container) h4 {
   text-align: center;
   width: 100%;
 }

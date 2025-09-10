@@ -9,7 +9,7 @@ function App() {
           <img src={profilePic} alt="profile picture" />
         </div>
         <div className="container">
-          <h3>Richard D. Awayan Jr.</h3>
+          <h4 className="croissant-one-regular">Richard D. Awayan Jr.</h4>
           <br />
           <p className="description">
             <q>

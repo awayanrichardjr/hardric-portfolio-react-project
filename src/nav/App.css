@@ -12,6 +12,9 @@
   a {
     @apply flex py-4 px-8;
   }
+  b {
+    color: var(--subject-color);
+  }
 }
 
 .navigation :where(.links) {
