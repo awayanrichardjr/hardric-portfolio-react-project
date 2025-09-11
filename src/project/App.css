@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
-.template {
-  @apply flex;
+.project {
+  @apply min-h-screen;
+  @apply flex flex-col items-center justify-center gap-4;
+}
+
+.container {
+  /* @apply bg-red-600; */
+  @apply flex items-center justify-center;
 }

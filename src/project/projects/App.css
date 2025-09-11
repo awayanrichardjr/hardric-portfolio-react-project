@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.projecttt {
+  @apply flex flex-col items-start justify-between;
+  @apply border p-4;
+  aspect-ratio: 1/1;
+  width: clamp(100px, 90vw, 300px);
+  border-radius: 8px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+  width: 100%;
+}

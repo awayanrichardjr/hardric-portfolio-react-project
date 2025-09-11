@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+ul.links {
+  display: flex;
+  li {
+    a {
+      @apply flex px-8 py-4;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ul.links {
+    display: none;
+  }
+}

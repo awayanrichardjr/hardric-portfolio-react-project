@@ -5,7 +5,7 @@ import "./style/global.css";
 import "./style/root.css";
 import "./style/font.css";
 
-import Nav from "./nav/App";
+import Nav from "./navigation/App";
 import Header from "./header/App";
 import About from "./about/App";
 import Skills from "./skills/App";
@@ -21,7 +21,7 @@ const view = (
     <About />
     <Skills />
     <Expertise />
-    {/* <Project /> */}
+    <Project />
     <Contact />
     <Footer />
   </StrictMode>

@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+.menu-links {
+  display: none;
+  position: relative;
+  span {
+    @apply flex items-center justify-center py-4 px-8 cursor-pointer;
+  }
+  a {
+    @apply flex py-4 px-8;
+  }
+  .content {
+    display: none;
+    @apply absolute -bottom-70 right-0;
+    background-color: var(--nav-bg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-links {
+    display: flex;
+  }
+}

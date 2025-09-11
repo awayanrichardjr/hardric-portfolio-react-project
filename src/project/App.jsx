@@ -1,9 +1,15 @@
 import "./App.css";
+import Project from "./projects/App";
 
 function App() {
   return (
     <>
-      <h1>Hellow World!</h1>
+      <section className="project" id="project">
+        <h1>My projects.</h1>
+        <div className="container">
+          <Project />
+        </div>
+      </section>
     </>
   );
 }
