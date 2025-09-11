@@ -11,12 +11,10 @@
     @apply hover:bg-white transition-colors;
   }
   .content {
-    @apply absolute right-0;
+    @apply absolute right-0 bg-zinc-50;
     top: 56px;
     /* background-color: var(--nav-bg); */
-    background-color: transparent;
-    -webkit-backdrop-filter: blur();
-    backdrop-filter: blur(50px);
+
     @apply w-0 h-screen overflow-hidden border-l border-white;
     transition: 1s;
   }
