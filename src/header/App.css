@@ -1,4 +1,5 @@
 @import "tailwindcss";
+/* @tailwind utilities; */
 
 .header {
   @apply flex flex-wrap-reverse place-content-center;

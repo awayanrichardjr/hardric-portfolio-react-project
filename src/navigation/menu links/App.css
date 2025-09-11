@@ -8,12 +8,17 @@
   }
   a {
     @apply flex py-4 px-8;
+    @apply hover:bg-white transition-colors;
   }
   .content {
-    display: none;
     @apply absolute right-0;
     top: 56px;
-    background-color: var(--nav-bg);
+    /* background-color: var(--nav-bg); */
+    background-color: transparent;
+    -webkit-backdrop-filter: blur();
+    backdrop-filter: blur(50px);
+    @apply w-0 h-screen overflow-hidden border-l border-white;
+    transition: 1s;
   }
 }
 

@@ -2,13 +2,15 @@ import "./App.css";
 
 function showContent() {
   const spanIcon = document.getElementById("span-icon").innerText;
+  const content = document.getElementById("content");
+  const span_icon = document.getElementById("span-icon");
   if (spanIcon === "menu") {
-    document.getElementById("content").style.display = "block";
-    document.getElementById("span-icon").innerText = "close";
+    content.style.width = "127.24px";
+    span_icon.innerText = "close";
     console.log(spanIcon);
   } else {
-    document.getElementById("content").style.display = "none";
-    document.getElementById("span-icon").innerText = "menu";
+    content.style.width = "0";
+    span_icon.innerText = "menu";
     console.log(spanIcon);
   }
 }
