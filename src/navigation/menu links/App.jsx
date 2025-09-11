@@ -36,6 +36,9 @@ function App() {
             <a href="#expertise">Expertise</a>
           </li>
           <li>
+            <a href="#project">Projects</a>
+          </li>
+          <li>
             <a href="#contact">Contact</a>
           </li>
         </div>
