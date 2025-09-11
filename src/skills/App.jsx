@@ -86,11 +86,11 @@ function App() {
             <p>vscode</p>
           </li>
         </ul>
-        <p className="description">
+        {/* <p className="description">
           Skilled in modern web development, utilizing frameworks, libraries,
           and tools to create responsive, user-friendly, and efficient
           applications.
-        </p>
+        </p> */}
       </section>
     </>
   );
