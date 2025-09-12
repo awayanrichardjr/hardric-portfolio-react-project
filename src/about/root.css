@@ -1,0 +1,17 @@
+:root {
+  color-scheme: light dark;
+  --about-btn-bg-hover: white;
+  --color-hover: var(--color-zinc-800);
+  --download-btn-bg-hover: white;
+  --download-color-hover: var(--color-zinc-800);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light light;
+    --about-btn-bg-hover: var(--color-zinc-800);
+    --download-btn-bg-hover: var(--color-zinc-800);
+    --download-color-hover: white;
+    --color-hover: white;
+  }
+}

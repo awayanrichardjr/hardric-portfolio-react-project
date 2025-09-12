@@ -7,16 +7,18 @@
   padding: 1rem;
   padding-top: 86px;
   place-content: center;
+  gap: 1rem;
 }
 .about :where(.container) {
   aspect-ratio: 1/1;
   width: clamp(100px, 90vw, 500px);
 
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
   align-items: start;
-
+  justify-content: start;
   padding: 1rem;
+  gap: 1rem;
 }
 .about :where(.container) img {
   aspect-ratio: 1/1;
@@ -25,11 +27,54 @@
   box-shadow: var(--card-shadow);
 }
 .about :where(.container) h4 {
-  text-align: center;
 }
 .about :where(.container) .description {
   text-indent: 1rem;
   text-align: justify;
 }
 .about :where(.container) .description > q {
+}
+
+.about :where(.container) .buttons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.about :where(.container) .buttons > button {
+}
+.about :where(.container) .buttons > button > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid;
+  min-width: clamp(1px, 90vw, 100.23px);
+  flex-grow: 1;
+}
+
+.about :where(.container) .buttons > button > a:hover {
+  background-color: var(--about-btn-bg-hover);
+  border-color: var(--about-btn-bg-hover);
+  color: var(--color-hover);
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 1024px) {
+  .about :where(.container) h4 {
+    text-align: center;
+    width: 100%;
+  }
+  .about :where(.container) .buttons {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .about :where(.container) .buttons > button {
+    flex-grow: 1;
+  }
 }

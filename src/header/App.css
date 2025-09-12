@@ -59,6 +59,7 @@
 }
 .header :where(.container) .buttons > .about-btn a:hover {
   background-color: var(--about-btn-bg-hover);
+  border-color: var(--about-btn-bg-hover);
   color: var(--color-hover);
   transform: translateY(-3px);
 }
@@ -66,7 +67,6 @@
   border-color: orangered;
   background-color: orangered;
   color: white;
-  /* transition: 0.2s; */
 }
 .header :where(.container) .buttons > .download-btn a:hover {
   background-color: var(--download-btn-bg-hover);

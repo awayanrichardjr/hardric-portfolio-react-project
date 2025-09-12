@@ -1,4 +1,5 @@
 import "./App.css";
+import "./root.css";
 import profilePic from "../assets/img/me.jpeg";
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
         </div>
         <div className="container">
           <h4 className="croissant-one-regular">Richard D. Awayan Jr.</h4>
-          <br />
+          {/* <br /> */}
           <p className="description">
             <q>
               I am a Frontend Developer passionate about creating clean,
@@ -24,6 +25,17 @@ function App() {
               highly effective.
             </q>
           </p>
+          <section className="buttons">
+            <button>
+              <a href="#">Experiences</a>
+            </button>
+            <button>
+              <a href="#">Certificates</a>
+            </button>
+            <button>
+              <a href="#">Projects</a>
+            </button>
+          </section>
         </div>
       </section>
     </>
