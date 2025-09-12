@@ -27,13 +27,13 @@ function App() {
           </p>
           <section className="buttons">
             <button>
-              <a href="#">Experiences</a>
+              <a href="#about">Experiences</a>
             </button>
             <button>
-              <a href="#">Certificates</a>
+              <a href="#about">Certificates</a>
             </button>
             <button>
-              <a href="#">Projects</a>
+              <a href="#about">Projects</a>
             </button>
           </section>
         </div>

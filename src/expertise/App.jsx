@@ -15,7 +15,7 @@ function App() {
                 websites.
               </p>
             </div>
-            <a className="learn-more-link" href="#">
+            <a className="learn-more-link" href="#expertise">
               Learn more
             </a>
           </div>
@@ -28,7 +28,7 @@ function App() {
                 better user experience.
               </p>
             </div>
-            <a className="learn-more-link" href="#">
+            <a className="learn-more-link" href="#expertise">
               Learn more
             </a>
           </div>
@@ -41,7 +41,7 @@ function App() {
                 interactive interfaces.
               </p>
             </div>
-            <a className="learn-more-link" href="#">
+            <a className="learn-more-link" href="#expertise">
               Learn more
             </a>
           </div>

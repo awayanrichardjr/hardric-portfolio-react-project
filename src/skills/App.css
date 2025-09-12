@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .skills {
   display: flex;
   flex-flow: column nowrap;
@@ -35,7 +37,19 @@
   width: clamp(1px, 90vw, 70px);
 }
 .skills :where(.skills-list) li:hover > img {
-  filter: drop-shadow(0 0 1rem white);
+  /* filter: drop-shadow(0 0 1rem white); */
+  filter: drop-shadow(10px 10px 1rem rgba(255, 0, 0, 0.5))
+    drop-shadow(-10px -10px 1rem rgba(0, 0, 255, 0.5));
+  animation: img-hover 1s ease-in-out 0s infinite normal none;
+}
+@keyframes img-hover {
+  0%,
+  100% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(50%);
+  }
 }
 .skills :where(.skills-list) li > p {
 }
