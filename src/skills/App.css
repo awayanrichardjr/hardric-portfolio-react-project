@@ -1,30 +1,38 @@
-@import "tailwindcss";
-
 .skills {
-  @apply flex flex-col items-center justify-center gap-4;
-  @apply min-h-screen m-auto;
-  padding-top: 56px;
-  width: clamp(100px, 90vw, 768px);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 100vh;
+  width: clamp(100px, 90vw, 1400px);
+  margin: auto;
+  padding: 1rem;
+  padding-top: 68px;
 }
-
-.skills :where(img) {
+.skills :where(h3) {
+  text-align: center;
+}
+.skills :where(.skills-list) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.skills :where(.skills-list) li {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.skills :where(.skills-list) li:hover {
+  background-color: var(--link-bg-hover);
+}
+.skills :where(.skills-list) li > img {
   aspect-ratio: 1/1;
-  object-fit: contain;
   width: clamp(1px, 90vw, 70px);
 }
-
-.skills :where(.skills-list) {
-  @apply flex gap-4 flex-wrap items-center justify-center;
-  @apply p-4;
-  li {
-    @apply flex flex-col items-center justify-center;
-  }
-}
-
-.skills :is(h1) {
-  text-align: center;
-}
-
-.skills :is(.description) {
-  text-align: center;
+.skills :where(.skills-list) li > p {
 }

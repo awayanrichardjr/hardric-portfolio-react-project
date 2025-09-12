@@ -1,4 +1,5 @@
 import "./App.css";
+import "./root.css";
 import profilePic from "../assets/img/me.jpg";
 
 function App() {
@@ -21,7 +22,9 @@ function App() {
            */}
           <div className="buttons">
             <button className="about-btn">
-              <a href="#about">About me</a>
+              <a href="#about">
+                <p>About me</p>
+              </a>
             </button>
             <button className="download-btn">
               <a

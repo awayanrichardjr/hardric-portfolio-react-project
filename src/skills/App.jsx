@@ -6,11 +6,9 @@ import jquery from "../assets/frameworks/jquery.svg";
 import laravel from "../assets/frameworks/laravel.svg";
 import nodejs from "../assets/frameworks/nodejs.svg";
 import react from "../assets/frameworks/react.svg";
-import vuejs from "../assets/frameworks/vuejs.svg";
 import css from "../assets/others/css.svg";
 import git from "../assets/others/git.svg";
 import html from "../assets/others/html.svg";
-import json from "../assets/others/json.svg";
 import npm from "../assets/others/npm.svg";
 import javascript from "../assets/programming languages/javascript.svg";
 import php from "../assets/programming languages/php.png";
@@ -20,9 +18,9 @@ function App() {
   return (
     <>
       <section className="skills" id="skills">
-        <h1 className="">
+        <h3>
           Skilled in modern frameworks, tools, and web development practices.
-        </h1>
+        </h3>
 
         <ul className="skills-list">
           <li>
@@ -62,20 +60,12 @@ function App() {
             <p>jquery</p>
           </li>
           <li>
-            <img title="json" src={json} alt="json" />
-            <p>json</p>
-          </li>
-          <li>
             <img title="laravel" src={laravel} alt="laravel" />
             <p>laravel</p>
           </li>
           <li>
             <img title="nodejs" src={nodejs} alt="nodejs" />
             <p>nodejs</p>
-          </li>
-          <li>
-            <img title="vuejs" src={vuejs} alt="vuejs" />
-            <p>vuejs</p>
           </li>
           <li>
             <img title="mysql" src={mysql} alt="mysql" />

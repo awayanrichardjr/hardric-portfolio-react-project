@@ -1,32 +1,35 @@
-@import "tailwindcss";
-
 .about {
-  @apply flex flex-wrap  place-content-center min-h-screen;
-  padding-top: 56px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+  padding-top: 86px;
+  place-content: center;
 }
-
-.about :where(img) {
-  margin: auto;
-
-  aspect-ratio: 1/1;
-  object-fit: contain;
-  width: clamp(1px, 90vw, 400px);
-  border-radius: 1rem;
-
-  box-shadow: var(--card-shadow);
-}
-
 .about :where(.container) {
-  width: 500px;
-  @apply p-4 h-auto;
-  @apply flex items-start justify-center flex-col;
+  aspect-ratio: 1/1;
+  width: clamp(100px, 90vw, 500px);
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+
+  padding: 1rem;
+}
+.about :where(.container) img {
+  aspect-ratio: 1/1;
+  width: clamp(100px, 90vw, 500px);
+  border-radius: 1rem;
+  box-shadow: var(--card-shadow);
 }
 .about :where(.container) h4 {
   text-align: center;
-  width: 100%;
 }
-
 .about :where(.container) .description {
-  text-align: justify;
   text-indent: 1rem;
+  text-align: justify;
+}
+.about :where(.container) .description > q {
 }
