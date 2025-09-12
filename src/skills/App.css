@@ -34,5 +34,8 @@
   aspect-ratio: 1/1;
   width: clamp(1px, 90vw, 70px);
 }
+.skills :where(.skills-list) li:hover > img {
+  filter: drop-shadow(0 0 1rem white);
+}
 .skills :where(.skills-list) li > p {
 }

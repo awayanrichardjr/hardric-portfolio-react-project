@@ -1,7 +1,7 @@
 .header {
   min-height: 100vh;
   display: flex;
-  flex-flow: row wrap-reverse;
+  flex-flow: column-reverse;
   align-items: center;
   justify-content: center;
   padding: 1rem;
@@ -21,6 +21,8 @@
   width: clamp(50px, 90vw, 200px);
   border-radius: 50%;
   box-shadow: var(--card-shadow);
+  filter: drop-shadow(100px 100px 10rem rgba(255, 0, 0, 0.5))
+    drop-shadow(-100px -100px 10rem rgba(0, 0, 255, 0.5));
 }
 
 .header :where(.container) h1 {
@@ -35,6 +37,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  z-index: 999;
 }
 .header :where(.container) .buttons > button {
   flex-grow: 1;

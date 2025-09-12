@@ -8,5 +8,6 @@
   @apply flex items-center justify-center;
   p {
     color: grey;
+    text-align: center;
   }
 }

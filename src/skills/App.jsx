@@ -2,10 +2,10 @@ import "./App.css";
 
 import github from "../assets/cloud/github.svg";
 import mysql from "../assets/databases/mysql.svg";
-import jquery from "../assets/frameworks/jquery.svg";
 import laravel from "../assets/frameworks/laravel.svg";
 import nodejs from "../assets/frameworks/nodejs.svg";
 import react from "../assets/frameworks/react.svg";
+import tailwindcss from "../assets/frameworks/tailwindcss.svg";
 import css from "../assets/others/css.svg";
 import git from "../assets/others/git.svg";
 import html from "../assets/others/html.svg";
@@ -40,6 +40,10 @@ function App() {
             <p>react</p>
           </li>
           <li>
+            <img title="tailwindcss" src={tailwindcss} alt="tailwindcss" />
+            <p>tailwindcss</p>
+          </li>
+          <li>
             <img title="npm" src={npm} alt="npm" />
             <p>npm</p>
           </li>
@@ -54,10 +58,6 @@ function App() {
           <li>
             <img title="php" src={php} alt="php" />
             <p>php</p>
-          </li>
-          <li>
-            <img title="jquery" src={jquery} alt="jquery" />
-            <p>jquery</p>
           </li>
           <li>
             <img title="laravel" src={laravel} alt="laravel" />
