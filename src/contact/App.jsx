@@ -36,6 +36,23 @@ function App() {
                 </a>
               </li>
             </ul>
+            <ul className="social-links">
+              <li>
+                <a href="#">
+                  <img src="" alt="Github" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="" alt="Facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="" alt="Instagram" />
+                </a>
+              </li>
+            </ul>
           </div>
           <div className="container">
             <iframe

@@ -1,27 +1,67 @@
 .contact {
-  padding-top: 56px;
-  @apply flex flex-col items-center justify-center gap-4;
-  @apply min-h-screen;
-  padding-top: 56px;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  padding-top: 68px;
+  place-content: center;
+}
+.contact :where(h1) {
 }
 .contact :where(.content) {
-  @apply flex flex-wrap-reverse place-content-center;
+  display: flex;
+  flex-flow: row wrap-reverse;
+  width: clamp(100px, 90vw, 1024px);
+  place-content: center;
 }
+.contact :where(.content) > .container {
+  aspect-ratio: 1/1;
+  width: clamp(50px, 90vw, 400px);
+  padding: 1rem;
 
-.contact :is(.container) {
-  @apply p-4 w-fit;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
 }
-.contact :is(.map) {
-  width: clamp(100px, 90vw, 500px);
-  height: 300px;
-  border: none;
-
+.contact :where(.content) > .container > .contact-details {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+.contact :where(.content) > .container > .contact-details > li {
+}
+.contact :where(.content) > .container > .contact-details > li > a {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.contact :where(.content) > .container > .contact-details > li > span {
+}
+.contact :where(.content) > .container > .contact-details > li > address {
+}
+.contact :where(.content) > .container > .social-links {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.contact :where(.content) > .container > .social-links > li {
+}
+.contact :where(.content) > .container > .social-links > li > a {
+}
+.contact :where(.content) > .container > .social-links > li > a > img {
+}
+.contact :where(.content) > .container > .map {
+  aspect-ratio: 1/1;
+  width: clamp(50px, 90vw, calc(400px - 1rem));
   box-shadow: var(--card-shadow);
-}
-
-.contact :is(.contact-details) {
-  @apply flex flex-col gap-4;
-}
-.contact :is(.contact-details) a {
-  @apply flex items-center justify-start gap-2;
 }

@@ -11,6 +11,9 @@ button {
   cursor: pointer;
   white-space: nowrap;
 }
+a {
+  cursor: pointer;
+}
 
 html {
   scroll-behavior: smooth;
