@@ -1,22 +1,59 @@
 .expertise {
-  @apply flex flex-col items-center justify-center gap-4;
-  @apply min-h-screen;
-  padding-top: 56px;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  padding-top: 68px;
 }
-
-.expertise :where(.container) {
-  @apply flex flex-wrap items-start justify-center gap-4;
+.expertise > h1 {
 }
-
-.expertise :where(.container) .offer {
-  @apply flex flex-col justify-between gap-4;
-  @apply border p-4;
+.expertise > .container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: start;
+  justify-content: space-between;
+}
+.expertise :where(.container) > .offer {
+  border: 1px solid transparent;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  justify-content: space-between;
+  width: clamp(100px, 90vw, calc(1280px / 3));
+  padding: 1rem;
+  flex-grow: 1;
   border-radius: 8px;
-  aspect-ratio: 1/1;
-  width: clamp(100px, 90vw, 300px);
+}
+.expertise :where(.container) > .offer:hover {
+  transform: scale(1.05);
+  z-index: 100;
+  box-shadow: var(--card-shadow);
+}
+.expertise :where(.container) > .offer > div {
+}
+.expertise :where(.container) > .offer > div > h4 {
+  color: grey;
+}
+.expertise :where(.container) > .offer:hover > div > h4 {
+  color: unset;
+}
+.expertise :where(.container) > .offer > div > p {
+  color: grey;
+}
+.expertise :where(.container) > .offer:hover > div > p {
+  color: unset;
+}
+.expertise :where(.container) > .offer > a {
+  width: fit-content;
+  padding: 8px;
+  border: 1px solid transparent;
 }
 
-.expertise :where(.container) .learn-more-link {
-  @apply p-2 border w-fit;
-  border-radius: 4px;
+.expertise :where(.container) > .offer > a:hover {
+  background-color: var(--link-bg-hover);
+  border-radius: 8px;
 }

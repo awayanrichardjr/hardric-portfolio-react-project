@@ -10,8 +10,7 @@ function App() {
           <h1 className="croissant-one-regular">Hi, I am Richard.</h1>
           <h1 className="croissant-one-regular">Frontend Developer</h1>
           <p className="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-            incidunt!
+            I build responsive and user-friendly websites.
           </p>
           <br />
           {/**

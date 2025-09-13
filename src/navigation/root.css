@@ -1,13 +1,11 @@
 :root {
   color-scheme: light dark;
   --nav-bg: var(--color-zinc-800);
-  --link-bg-hover: rgba(255, 255, 255, 0.05);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     color-scheme: light light;
     --nav-bg: white;
-    --link-bg-hover: rgba(0, 0, 0, 0.05);
   }
 }

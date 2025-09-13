@@ -5,6 +5,7 @@
 
   /* variables */
   --card-shadow: 0 20px 50px -20px black;
+  --link-bg-hover: rgba(255, 255, 255, 0.05);
 }
 
 @media (prefers-color-scheme: light) {
@@ -15,5 +16,6 @@
 
     /* variables */
     --card-shadow: 0 30px 40px -20px rgba(0, 0, 0, 0.3);
+    --link-bg-hover: rgba(0, 0, 0, 0.05);
   }
 }

@@ -36,7 +36,7 @@ function App() {
                 </a>
               </li>
             </ul>
-            <ul className="social-links">
+            {/* <ul className="social-links">
               <li>
                 <a href="#">
                   <img src="" alt="Github" />
@@ -52,7 +52,7 @@ function App() {
                   <img src="" alt="Instagram" />
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className="container">
             <iframe

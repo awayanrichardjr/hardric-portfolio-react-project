@@ -21,7 +21,7 @@
 }
 .skills :where(.skills-list) li {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   padding: 1rem;
