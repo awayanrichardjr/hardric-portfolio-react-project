@@ -20,7 +20,7 @@
   padding: 1rem;
   gap: 1rem;
 }
-.about :where(.container) img {
+.about :where(.container) .about-profile {
   aspect-ratio: 1/1;
   width: clamp(100px, 90vw, 500px);
   border-radius: 1rem;
@@ -61,6 +61,13 @@
   border-color: var(--about-btn-bg-hover);
   color: var(--color-hover);
   transform: translateY(-3px);
+}
+.about :where(.container) .buttons > a > img {
+  width: clamp(1px, 90vw, 32px);
+}
+.about :where(.container) .buttons > a:hover > img {
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow);
 }
 
 @media screen and (max-width: 1024px) {

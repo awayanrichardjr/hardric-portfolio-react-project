@@ -1,13 +1,18 @@
 import "./App.css";
 import "./root.css";
 import profilePic from "../assets/img/me.jpeg";
+import github from "../assets/social icons/github.svg";
 
 function App() {
   return (
     <>
       <section className="about" id="about">
         <div className="container">
-          <img src={profilePic} alt="profile picture" />
+          <img
+            className="about-profile"
+            src={profilePic}
+            alt="profile picture"
+          />
         </div>
         <div className="container">
           <h4 className="croissant-one-regular">Richard D. Awayan Jr.</h4>
@@ -35,6 +40,9 @@ function App() {
             <button>
               <a href="#about">Projects</a>
             </button>
+            <a href="https://github.com/awayanrichardjr" target="_blank">
+              <img title="Github profile" src={github} alt="github" />
+            </a>
           </section>
         </div>
       </section>
