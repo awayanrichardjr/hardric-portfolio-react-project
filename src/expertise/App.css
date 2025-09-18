@@ -9,7 +9,7 @@
   padding: 1rem;
   padding-top: 68px;
 
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 .expertise > h1 {
 }

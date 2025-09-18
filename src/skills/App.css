@@ -10,7 +10,7 @@
   padding: 1rem;
   padding-top: 68px;
 
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 .skills :where(h3) {
   text-align: center;
