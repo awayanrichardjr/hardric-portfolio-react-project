@@ -24,7 +24,7 @@ function App() {
                 </a>
               </li>
               <li>
-                <a href="tell:+639065876602">
+                <a href="tel:+639065876602">
                   <span className="material-symbols-rounded">call</span>
                   <address>Call: +63906-587-6602</address>
                 </a>
