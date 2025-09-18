@@ -31,6 +31,10 @@
 }
 .skills :where(.skills-list) li:hover {
   background-color: var(--link-bg-hover); /* root from navigation/root.css */
+
+  filter: drop-shadow(10px 10px 1rem rgba(255, 0, 0, 0.5))
+    drop-shadow(-10px -10px 1rem rgba(0, 0, 255, 0.5));
+  transform: scale(1.1);
 }
 .skills :where(.skills-list) li > img {
   aspect-ratio: 1/1;
@@ -42,8 +46,6 @@
 }
 .skills :where(.skills-list) li:hover > img {
   /* filter: drop-shadow(0 0 1rem white); */
-  filter: drop-shadow(10px 10px 1rem rgba(255, 0, 0, 0.5))
-    drop-shadow(-10px -10px 1rem rgba(0, 0, 255, 0.5));
   animation: img-hover 1s ease-in-out 0s infinite normal none;
 }
 @keyframes img-hover {
