@@ -8,6 +8,8 @@
   padding: 1rem;
   padding-top: 68px;
   place-content: center;
+
+  scroll-snap-align: start;
 }
 .contact :where(h1) {
 }

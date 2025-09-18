@@ -16,8 +16,10 @@ a {
 }
 
 html {
-  scroll-behavior: smooth;
   font-size: clamp(1px, 8vw, 1rem);
+
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 h6 {

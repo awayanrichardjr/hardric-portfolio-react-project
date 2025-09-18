@@ -8,6 +8,8 @@
   padding-top: 68px;
   place-content: center;
   gap: 1rem;
+
+  scroll-snap-align: start;
 }
 .about :where(.container) {
   aspect-ratio: 1/1;
