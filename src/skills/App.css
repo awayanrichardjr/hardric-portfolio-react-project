@@ -3,7 +3,7 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   min-height: 100vh;
   width: clamp(100px, 90vw, 1400px);
   margin: auto;
