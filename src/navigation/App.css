@@ -1,85 +1,90 @@
+/*  */
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--nav-bg);
 
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 1000;
-
   width: 100%;
-  background-color: var(--nav-bg);
+  z-index: 1000;
 }
 
+/*  */
 .navigation :where(.logo) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .navigation :where(.logo) li {
 }
 .navigation :where(.logo) li > a {
   display: flex;
+  align-items: center;
+  justify-content: start;
   padding: 1rem 2rem;
-  font-size: clamp(1px, 8vw, 1.5rem);
+  font-size: 1.5rem;
 }
 .navigation :where(.logo) li > a > b {
   color: orangered;
 }
+
+/*  */
 .navigation :where(.links) {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .navigation :where(.links) li {
 }
 .navigation :where(.links) li > a {
   display: flex;
+  align-items: center;
+  justify-content: start;
   padding: 1rem;
   border-radius: 8px;
 }
 .navigation :where(.links) li > a:hover {
   background-color: var(--link-bg-hover);
 }
-.navigation :where(.links) li:nth-child(6) > a {
-  margin-right: 1rem;
+.navigation :where(.links) li > a > p {
 }
+
+/*  */
 .navigation :where(.menu-links) {
   display: none;
 }
-.navigation :where(.menu-links) .dropdown {
+.navigation :where(.menu-links) li {
 }
-.navigation :where(.menu-links) .dropdown > span {
+.navigation :where(.menu-links) li > span {
   display: flex;
-  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: start;
+  padding: 1rem;
   cursor: pointer;
   border-radius: 8px;
 }
-.navigation :where(.menu-links) .dropdown > span:hover {
+.navigation :where(.menu-links) li > span:hover {
   background-color: var(--link-bg-hover);
 }
 .navigation :where(.menu-links) .content {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 0;
-
+  display: none;
   position: absolute;
   top: 68px;
   right: 0;
-  z-index: 1000;
   background-color: var(--nav-bg);
-  height: 100vh;
+  box-shadow: var(--card-shadow);
+  border-radius: 8px;
+  z-index: 1000;
 }
 .navigation :where(.menu-links) .content > li {
 }
 .navigation :where(.menu-links) .content > li > a {
   display: flex;
+  align-items: center;
+  justify-content: start;
   padding: 1rem 2rem;
-  border-radius: 8px;
 }
-.navigation :where(.menu-links) .content > li:hover > a {
+.navigation :where(.menu-links) .content > li > a:hover {
   background-color: var(--link-bg-hover);
+}
+.navigation :where(.menu-links) .content > li > a > p {
 }
 
 @media screen and (max-width: 768px) {
@@ -87,6 +92,6 @@
     display: none;
   }
   .navigation :where(.menu-links) {
-    display: flex;
+    display: block;
   }
 }

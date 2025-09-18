@@ -2,17 +2,15 @@ import "./App.css";
 import "./root.css";
 
 function showContent() {
-  const spanIcon = document.getElementById("span-icon").innerText;
-  const content = document.getElementById("content");
+  const span_value = document.getElementById("span-icon").innerText;
   const span_icon = document.getElementById("span-icon");
-  if (spanIcon === "menu") {
-    content.style.width = "127.24px";
+  const menu_links = document.getElementById("content");
+  if (span_value === "menu") {
     span_icon.innerText = "close";
-    console.log(spanIcon);
+    menu_links.style.display = "block";
   } else {
-    content.style.width = "0";
     span_icon.innerText = "menu";
-    console.log(spanIcon);
+    menu_links.style.display = "none";
   }
 }
 
@@ -29,22 +27,32 @@ function App() {
         </ul>
         <ul className="links">
           <li>
-            <a href="#home">Home</a>
+            <a href="#home">
+              <p id="label">Home</p>
+            </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">
+              <p id="label">About</p>
+            </a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills">
+              <p id="label">Skills</p>
+            </a>
           </li>
           <li>
-            <a href="#expertise">Expertise</a>
+            <a href="#expertise">
+              <p id="label">Expertise</p>
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">
+              <p id="label">Contact</p>
+            </a>
           </li>
         </ul>
-        <ul className="menu-links">
+        <ul className="menu-links" id="menu-links">
           <li className="dropdown" id="dropdown" onClick={showContent}>
             <span className="material-symbols-rounded" id="span-icon">
               menu
@@ -52,19 +60,29 @@ function App() {
           </li>
           <div className="content" id="content">
             <li>
-              <a href="#home">Home</a>
+              <a href="#home">
+                <p id="label">Home</p>
+              </a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about">
+                <p id="label">About</p>
+              </a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">
+                <p id="label">Skills</p>
+              </a>
             </li>
             <li>
-              <a href="#expertise">Expertise</a>
+              <a href="#expertise">
+                <p id="label">Expertise</p>
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact">
+                <p id="label">Contact</p>
+              </a>
             </li>
           </div>
         </ul>

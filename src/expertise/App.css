@@ -36,17 +36,11 @@
 .expertise :where(.container) > .offer > div {
 }
 .expertise :where(.container) > .offer > div > h4 {
-  color: grey;
 }
-.expertise :where(.container) > .offer:hover > div > h4 {
-  color: unset;
-}
+
 .expertise :where(.container) > .offer > div > p {
-  color: grey;
 }
-.expertise :where(.container) > .offer:hover > div > p {
-  color: unset;
-}
+
 .expertise :where(.container) > .offer > a {
   width: fit-content;
   padding: 8px;
