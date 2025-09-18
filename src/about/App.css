@@ -21,6 +21,8 @@
   justify-content: start;
   padding: 1rem;
   gap: 1rem;
+
+  position: relative;
 }
 .about :where(.container) .about-profile {
   aspect-ratio: 1/1;
@@ -28,6 +30,19 @@
   border-radius: 1rem;
   box-shadow: var(--card-shadow);
 }
+
+.about :where(.container) a > img {
+  width: clamp(1px, 90vw, 32px);
+
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+.about :where(.container) a:hover > img {
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow);
+}
+
 .about :where(.container) h4 {
 }
 .about :where(.container) .description {
@@ -37,6 +52,7 @@
 .about :where(.container) .description > q {
 }
 
+/* buttons */
 .about :where(.container) .buttons {
   display: flex;
   flex-flow: row wrap;
@@ -45,8 +61,6 @@
   gap: 1rem;
 }
 .about :where(.container) .buttons > button {
-}
-.about :where(.container) .buttons > button > a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,18 +72,11 @@
   flex-grow: 1;
 }
 
-.about :where(.container) .buttons > button > a:hover {
+.about :where(.container) .buttons > button:hover {
   background-color: var(--about-btn-bg-hover);
   border-color: var(--about-btn-bg-hover);
   color: var(--color-hover);
   transform: translateY(-3px);
-}
-.about :where(.container) .buttons > a > img {
-  width: clamp(1px, 90vw, 32px);
-}
-.about :where(.container) .buttons > a:hover > img {
-  transform: translateY(-3px);
-  box-shadow: var(--card-shadow);
 }
 
 @media screen and (max-width: 1024px) {

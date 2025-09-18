@@ -1,7 +1,36 @@
 import "./App.css";
 import "./root.css";
 import profilePic from "../assets/img/me.jpeg";
-import github from "../assets/social icons/github.svg";
+import github from "../assets/cloud/github.svg";
+import AboutMe from "./about me/App";
+import Certificate from "./certificate/App";
+import Experience from "./experience/App";
+import Project from "./project/App";
+
+function showAboutMe() {
+  document.getElementById("experience").style.display = "none";
+  document.getElementById("certificate").style.display = "none";
+  document.getElementById("project").style.display = "none";
+  document.getElementById("about-me").style.display = "block";
+}
+function showExperiences() {
+  document.getElementById("experience").style.display = "block";
+  document.getElementById("certificate").style.display = "none";
+  document.getElementById("project").style.display = "none";
+  document.getElementById("about-me").style.display = "none";
+}
+function showCertificates() {
+  document.getElementById("experience").style.display = "none";
+  document.getElementById("certificate").style.display = "block";
+  document.getElementById("project").style.display = "none";
+  document.getElementById("about-me").style.display = "none";
+}
+function showProjects() {
+  document.getElementById("experience").style.display = "none";
+  document.getElementById("certificate").style.display = "none";
+  document.getElementById("project").style.display = "block";
+  document.getElementById("about-me").style.display = "none";
+}
 
 function App() {
   return (
@@ -13,36 +42,26 @@ function App() {
             src={profilePic}
             alt="profile picture"
           />
+          <a href="https://github.com/awayanrichardjr" target="_blank">
+            <img title="Github profile" src={github} alt="github" />
+          </a>
         </div>
+        {/**
+         *
+         *
+         *
+         *
+         * */}
         <div className="container">
-          <h4 className="croissant-one-regular">Richard D. Awayan Jr.</h4>
-          {/* <br /> */}
-          <p className="description">
-            <q>
-              I am a Frontend Developer passionate about creating clean,
-              responsive, and user-friendly websites. I specialize in building
-              portfolio websites, browsing platforms, and modern responsive
-              layouts that work seamlessly across devices. Currently, I focus on
-              developing website designs provided by designers, turning static
-              visuals into fully functional and interactive web experiences.
-              With a strong emphasis on detail, performance, and usability, I
-              aim to deliver websites that are both visually appealing and
-              highly effective.
-            </q>
-          </p>
+          <AboutMe />
+          <Experience />
+          <Certificate />
+          <Project />
           <section className="buttons">
-            <button>
-              <a href="#about">Experiences</a>
-            </button>
-            <button>
-              <a href="#about">Certificates</a>
-            </button>
-            <button>
-              <a href="#about">Projects</a>
-            </button>
-            <a href="https://github.com/awayanrichardjr" target="_blank">
-              <img title="Github profile" src={github} alt="github" />
-            </a>
+            <button onClick={showAboutMe}>Description</button>
+            <button onClick={showExperiences}>Experiences</button>
+            <button onClick={showCertificates}>Certificates</button>
+            <button onClick={showProjects}>Projects</button>
           </section>
         </div>
       </section>
