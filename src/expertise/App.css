@@ -31,7 +31,7 @@
   border-radius: 8px;
 }
 .expertise :where(.container) > .offer:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   z-index: 100;
   box-shadow: var(--card-shadow);
 }
