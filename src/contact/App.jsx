@@ -1,4 +1,7 @@
 import "./App.css";
+import facebook from "./assets/facebook.svg";
+import github from "./assets/github.svg";
+import instagram from "./assets/instagram.svg";
 
 function App() {
   return (
@@ -36,23 +39,36 @@ function App() {
                 </a>
               </li>
             </ul>
-            {/* <ul className="social-links">
+            {/**
+             *
+             *
+             *
+             *
+             *
+             * */}
+            <ul className="social-links">
               <li>
-                <a href="#">
-                  <img src="" alt="Github" />
+                <a href="https://github.com/awayanrichardjr" target="_blank">
+                  <img src={github} alt="Github" />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="" alt="Facebook" />
+                <a
+                  href="https://www.facebook.com/awayanrichardjr"
+                  target="_blank"
+                >
+                  <img src={facebook} alt="Facebook" />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="" alt="Instagram" />
+                <a
+                  href="https://www.instagram.com/awayanrichardjr/"
+                  target="_blank"
+                >
+                  <img src={instagram} alt="Instagram" />
                 </a>
               </li>
-            </ul> */}
+            </ul>
           </div>
           <div className="container">
             <iframe

@@ -26,7 +26,7 @@
 
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .contact :where(.content) > .container > .contact-details {
@@ -49,6 +49,8 @@
 }
 .contact :where(.content) > .container > .contact-details > li > address {
 }
+
+/* social links */
 .contact :where(.content) > .container > .social-links {
   display: flex;
   flex-flow: row;
@@ -57,10 +59,56 @@
   gap: 1rem;
 }
 .contact :where(.content) > .container > .social-links > li {
+  position: relative;
+}
+.contact
+  :where(.content)
+  > .container
+  > .social-links
+  > li:nth-child(1):hover::before {
+  content: "Github";
+  position: absolute;
+  top: -45px;
+  background-color: var(--link-bg-hover);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.contact
+  :where(.content)
+  > .container
+  > .social-links
+  > li:nth-child(2):hover::before {
+  content: "Facebook";
+  position: absolute;
+  top: -45px;
+  background-color: var(--link-bg-hover);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.contact
+  :where(.content)
+  > .container
+  > .social-links
+  > li:nth-child(3):hover::before {
+  content: "Instagram";
+  position: absolute;
+  top: -45px;
+  background-color: var(--link-bg-hover);
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 .contact :where(.content) > .container > .social-links > li > a {
+  display: flex;
+  padding: 1rem;
+  border-radius: 4px;
+}
+.contact :where(.content) > .container > .social-links > li > a:hover {
+  background-color: var(--link-bg-hover);
+  transform: translateY(-2px);
 }
 .contact :where(.content) > .container > .social-links > li > a > img {
+  aspect-ratio: 1/1;
+  width: 20px;
 }
 .contact :where(.content) > .container > .map {
   aspect-ratio: 1/1;
