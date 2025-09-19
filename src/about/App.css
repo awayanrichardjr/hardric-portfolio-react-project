@@ -23,8 +23,8 @@
 }
 .about :where(.container) .github-profile-link {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 .about :where(.container) .github-profile-link > img {
   aspect-ratio: 1/1;
@@ -36,6 +36,7 @@
 }
 .about :where(.container) .description {
   text-align: justify;
+  text-indent: 1rem;
 }
 .about :where(.container) .description > q {
 }
