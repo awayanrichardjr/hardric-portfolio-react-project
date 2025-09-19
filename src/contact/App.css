@@ -72,6 +72,7 @@
   background-color: var(--link-bg-hover);
   padding: 0.5rem;
   border-radius: 4px;
+  z-index: 999;
 }
 .contact
   :where(.content)
@@ -84,6 +85,7 @@
   background-color: var(--link-bg-hover);
   padding: 0.5rem;
   border-radius: 4px;
+  z-index: 999;
 }
 .contact
   :where(.content)
@@ -96,6 +98,7 @@
   background-color: var(--link-bg-hover);
   padding: 0.5rem;
   border-radius: 4px;
+  z-index: 999;
 }
 .contact :where(.content) > .container > .social-links > li > a {
   display: flex;
