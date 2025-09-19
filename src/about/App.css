@@ -1,96 +1,41 @@
 .about {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   padding: 1rem;
   padding-top: 68px;
+  align-items: center;
+  justify-content: center;
   place-content: center;
-  gap: 1rem;
-
-  /* scroll-snap-align: start; */
 }
 .about :where(.container) {
-  aspect-ratio: 1/1;
   width: clamp(100px, 90vw, 500px);
-
-  display: flex;
-  flex-flow: column;
-  align-items: start;
-  justify-content: start;
   padding: 1rem;
-  gap: 1rem;
-
   position: relative;
+  /* background-color: red; */
 }
 .about :where(.container) .about-profile {
   aspect-ratio: 1/1;
-  width: clamp(100px, 90vw, 500px);
+  width: clamp(1px, 90vw, 500px);
+  object-fit: contain;
   border-radius: 1rem;
   box-shadow: var(--card-shadow);
 }
-
-.about :where(.container) a > img {
-  width: clamp(1px, 90vw, 32px);
-
+.about :where(.container) .github-profile-link {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 2rem;
+  right: 2rem;
 }
-.about :where(.container) a:hover > img {
-  transform: translateY(-3px);
-  box-shadow: var(--card-shadow);
+.about :where(.container) .github-profile-link > img {
+  aspect-ratio: 1/1;
+  width: clamp(1px, 90vw, 32px);
 }
 
+/*  */
 .about :where(.container) h4 {
 }
 .about :where(.container) .description {
-  text-indent: 1rem;
   text-align: justify;
 }
 .about :where(.container) .description > q {
-}
-
-/* buttons */
-.about :where(.container) .buttons {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.about :where(.container) .buttons > button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid;
-  min-width: clamp(1px, 90vw, 100.23px);
-  flex-grow: 1;
-}
-
-.about :where(.container) .buttons > button:hover {
-  background-color: var(--about-btn-bg-hover);
-  border-color: var(--about-btn-bg-hover);
-  color: var(--color-hover);
-  transform: translateY(-3px);
-}
-
-@media screen and (max-width: 1024px) {
-  .about :where(.container) h4 {
-    text-align: center;
-    width: 100%;
-  }
-  .about :where(.container) .buttons {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 376px) {
-  .about :where(.container) .buttons > button {
-    flex-grow: 1;
-  }
 }
