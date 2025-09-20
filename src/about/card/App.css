@@ -13,31 +13,31 @@
   z-index: 101;
 }
 .animated-container .card-box ~ .about-profile {
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .animated-container .tl:hover ~ .about-profile {
   transform: rotateX(-20deg) rotateY(20deg) scale(1.1);
 }
 .animated-container .t:hover ~ .about-profile {
-  transform: rotateX(-20deg) rotateY(0) scale(1.1);
+  transform: rotateX(-30deg) rotateY(0) scale(1.1);
 }
 .animated-container .tr:hover ~ .about-profile {
   transform: rotateX(-20deg) rotateY(-20deg) scale(1.1);
 }
 .animated-container .l:hover ~ .about-profile {
-  transform: rotateX(0) rotateY(20deg) scale(1.1);
+  transform: rotateX(0) rotateY(30deg) scale(1.1);
 }
 .animated-container .c:hover ~ .about-profile {
   transform: scale(1.1);
 }
 .animated-container .r:hover ~ .about-profile {
-  transform: rotateX(0) rotateY(-20deg) scale(1.1);
+  transform: rotateX(0) rotateY(-30deg) scale(1.1);
 }
 .animated-container .bl:hover ~ .about-profile {
   transform: rotateX(20deg) rotateY(20deg) scale(1.1);
 }
 .animated-container .b:hover ~ .about-profile {
-  transform: rotateX(20deg) rotateY(0) scale(1.1);
+  transform: rotateX(30deg) rotateY(0) scale(1.1);
 }
 .animated-container .br:hover ~ .about-profile {
   transform: rotateX(20deg) rotateY(-20deg) scale(1.1);
