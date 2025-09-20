@@ -79,6 +79,37 @@
 .navigation :where(.menu-links) li > span:hover {
   background-color: var(--link-bg-hover);
 }
+
+/* ? nav-about-link-content */
+.navigation :where(.menu-links) li:nth-child(2):hover .nav-about-link-content {
+  height: 225px;
+}
+.navigation :where(.menu-links) li > .nav-about-link-content {
+  height: 0;
+  overflow: hidden;
+  background-color: var(--link-bg-hover);
+  -webkit-backdrop-filter: blur();
+  backdrop-filter: blur(5px);
+  transition: 1s;
+}
+.navigation :where(.menu-links) li > .nav-about-link-content > ul {
+}
+.navigation :where(.menu-links) li > .nav-about-link-content > ul > li {
+}
+.navigation :where(.menu-links) li > .nav-about-link-content > ul > li > a {
+  display: flex;
+  padding: 1rem 2rem;
+}
+.navigation
+  :where(.menu-links)
+  li
+  > .nav-about-link-content
+  > ul
+  > li
+  > a:hover {
+  background-color: var(--link-bg-hover);
+}
+
 .navigation :where(.menu-links) .content {
   display: none;
   position: absolute;

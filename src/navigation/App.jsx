@@ -123,6 +123,35 @@ function App() {
               <a href="#about">
                 <p id="label">About</p>
               </a>
+              {/**
+               *
+               *
+               *
+               * */}
+              <div className="nav-about-link-content">
+                <ul>
+                  <li>
+                    <a href="#about" onClick={showDefaultContent}>
+                      Default
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#about" onClick={showExpContent}>
+                      Experiences
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#about" onClick={showCertContent}>
+                      Certificates
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#about" onClick={showProjectsContent}>
+                      Projects
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
               <a href="#skills">
