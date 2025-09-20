@@ -5,7 +5,7 @@ import profilePic from "./img/me.jpeg";
 function App() {
   return (
     <>
-      <div className="animated-card-profile">
+      <div className="animated-container">
         <div className="card-box tl"></div>
         <div className="card-box t"></div>
         <div className="card-box tr"></div>

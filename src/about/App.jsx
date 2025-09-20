@@ -9,12 +9,6 @@ function App() {
         <div className="container">
           <Card />
         </div>
-        {/**
-         *
-         *
-         *
-         *
-         * */}
         <div className="container">
           <h4 className="croissant-one-regular">Richard D. Awayan Jr.</h4>
           <p className="description">

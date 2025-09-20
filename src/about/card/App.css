@@ -1,47 +1,49 @@
 /* ? card */
-.animated-card-profile {
+.animated-container {
   position: relative;
   perspective: 1500px;
+
   display: grid;
+  aspect-ratio: 1/1;
   grid-template-columns: repeat(3, 1fr);
+
   transform: scale(0.9);
-  height: 500px;
 }
-.animated-card-profile .card-box {
+.animated-container .card-box {
   z-index: 101;
 }
-.animated-card-profile .card-box ~ .about-profile {
+.animated-container .card-box ~ .about-profile {
   transition: 0.3s;
 }
-.animated-card-profile .tl:hover ~ .about-profile {
+.animated-container .tl:hover ~ .about-profile {
   transform: rotateX(-20deg) rotateY(20deg) scale(1.1);
 }
-.animated-card-profile .t:hover ~ .about-profile {
+.animated-container .t:hover ~ .about-profile {
   transform: rotateX(-20deg) rotateY(0) scale(1.1);
 }
-.animated-card-profile .tr:hover ~ .about-profile {
+.animated-container .tr:hover ~ .about-profile {
   transform: rotateX(-20deg) rotateY(-20deg) scale(1.1);
 }
-.animated-card-profile .l:hover ~ .about-profile {
+.animated-container .l:hover ~ .about-profile {
   transform: rotateX(0) rotateY(20deg) scale(1.1);
 }
-.animated-card-profile .c:hover ~ .about-profile {
+.animated-container .c:hover ~ .about-profile {
   transform: scale(1.1);
 }
-.animated-card-profile .r:hover ~ .about-profile {
+.animated-container .r:hover ~ .about-profile {
   transform: rotateX(0) rotateY(-20deg) scale(1.1);
 }
-.animated-card-profile .bl:hover ~ .about-profile {
+.animated-container .bl:hover ~ .about-profile {
   transform: rotateX(20deg) rotateY(20deg) scale(1.1);
 }
-.animated-card-profile .b:hover ~ .about-profile {
+.animated-container .b:hover ~ .about-profile {
   transform: rotateX(20deg) rotateY(0) scale(1.1);
 }
-.animated-card-profile .br:hover ~ .about-profile {
+.animated-container .br:hover ~ .about-profile {
   transform: rotateX(20deg) rotateY(-20deg) scale(1.1);
 }
 
-.animated-card-profile .about-profile {
+.animated-container .about-profile {
   position: absolute;
   top: 0;
   z-index: 100;
@@ -51,4 +53,6 @@
   object-fit: contain;
   border-radius: 8px;
   box-shadow: var(--card-shadow);
+
+  justify-self: center;
 }
