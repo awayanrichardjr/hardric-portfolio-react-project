@@ -131,24 +131,16 @@ function App() {
               <div className="nav-about-link-content">
                 <ul>
                   <li>
-                    <a href="#about" onClick={showDefaultContent}>
-                      Default
-                    </a>
+                    <a onClick={showDefaultContent}>Default</a>
                   </li>
                   <li>
-                    <a href="#about" onClick={showExpContent}>
-                      Experiences
-                    </a>
+                    <a onClick={showExpContent}>Experiences</a>
                   </li>
                   <li>
-                    <a href="#about" onClick={showCertContent}>
-                      Certificates
-                    </a>
+                    <a onClick={showCertContent}>Certificates</a>
                   </li>
                   <li>
-                    <a href="#about" onClick={showProjectsContent}>
-                      Projects
-                    </a>
+                    <a onClick={showProjectsContent}>Projects</a>
                   </li>
                 </ul>
               </div>
