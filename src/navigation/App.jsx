@@ -70,7 +70,7 @@ function App() {
               <ul>
                 <li>
                   <a href="#about" onClick={showDefaultContent}>
-                    Default
+                    Myself
                   </a>
                 </li>
                 <li>
@@ -131,7 +131,7 @@ function App() {
               <div className="nav-about-link-content">
                 <ul>
                   <li>
-                    <a onClick={showDefaultContent}>Default</a>
+                    <a onClick={showDefaultContent}>Myself</a>
                   </li>
                   <li>
                     <a onClick={showExpContent}>Experiences</a>
