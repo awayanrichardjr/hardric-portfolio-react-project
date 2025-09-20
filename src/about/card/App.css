@@ -51,7 +51,7 @@
   aspect-ratio: 1/1;
   width: clamp(1px, 90vw, 500px);
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 16px;
   box-shadow: var(--card-shadow);
 
   justify-self: center;
