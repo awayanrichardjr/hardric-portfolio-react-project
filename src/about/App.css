@@ -12,23 +12,6 @@
   width: clamp(100px, 90vw, 500px);
   padding: 1rem;
   position: relative;
-  /* background-color: red; */
-}
-.about :where(.container) .about-profile {
-  aspect-ratio: 1/1;
-  width: clamp(1px, 90vw, 500px);
-  object-fit: contain;
-  border-radius: 1rem;
-  box-shadow: var(--card-shadow);
-}
-.about :where(.container) .github-profile-link {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-}
-.about :where(.container) .github-profile-link > img {
-  aspect-ratio: 1/1;
-  width: clamp(1px, 90vw, 32px);
 }
 
 /*  */

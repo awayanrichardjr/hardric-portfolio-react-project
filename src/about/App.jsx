@@ -1,25 +1,13 @@
 import "./App.css";
 import "./root.css";
-import profilePic from "../assets/img/me.jpeg";
-import github from "../assets/cloud/github.svg";
+import Card from "./card/App";
 
 function App() {
   return (
     <>
       <section className="about" id="about">
         <div className="container">
-          <img
-            className="about-profile"
-            src={profilePic}
-            alt="profile picture"
-          />
-          <a
-            className="github-profile-link"
-            href="https://github.com/awayanrichardjr"
-            target="_blank"
-          >
-            <img title="Github profile" src={github} alt="github" />
-          </a>
+          <Card />
         </div>
         {/**
          *
