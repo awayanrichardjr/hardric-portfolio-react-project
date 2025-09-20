@@ -1,0 +1,30 @@
+.projects {
+  display: none;
+}
+
+.projects :where(h4) {
+}
+.projects :where(.project-list) {
+  list-style-type: disc;
+
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.projects :where(.project-list) li {
+  text-align: justify;
+}
+.projects :where(.project-list) li > p {
+}
+.projects :where(.project-list) li > p > b {
+}
+.projects :where(.project-list) li > a {
+  display: block;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.projects :where(.project-list) li > a:hover {
+  background-color: var(--link-bg-hover);
+}

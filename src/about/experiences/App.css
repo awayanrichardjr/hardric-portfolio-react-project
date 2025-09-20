@@ -1,0 +1,19 @@
+.experiences {
+  display: none;
+}
+.experiences :where(h4) {
+}
+
+.experiences :where(.exp-list) {
+  list-style-type: disc;
+
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.experiences :where(.exp-list) li {
+  text-align: justify;
+}
+.experiences :where(.exp-list) li > b {
+}

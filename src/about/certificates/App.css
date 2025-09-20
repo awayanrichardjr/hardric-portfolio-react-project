@@ -1,0 +1,17 @@
+.certificates {
+  display: none;
+}
+
+.certificates :where(.cert-list) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.certificates :where(.cert-list) img {
+  width: clamp(1px, 90vw, 200px);
+  border: 5px solid white;
+  box-shadow: var(--card-shadow);
+}

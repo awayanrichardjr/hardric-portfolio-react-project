@@ -1,0 +1,9 @@
+.default {
+}
+.default > h4 {
+}
+.default > .description {
+  text-align: justify;
+}
+.default > .description > q {
+}

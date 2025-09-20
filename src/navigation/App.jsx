@@ -14,6 +14,32 @@ function showContent() {
   }
 }
 
+function showDefaultContent() {
+  document.getElementById("default").style.display = "block";
+  document.getElementById("experiences").style.display = "none";
+  document.getElementById("certificates").style.display = "none";
+  document.getElementById("projects").style.display = "none";
+}
+
+function showExpContent() {
+  document.getElementById("default").style.display = "none";
+  document.getElementById("experiences").style.display = "block";
+  document.getElementById("certificates").style.display = "none";
+  document.getElementById("projects").style.display = "none";
+}
+function showCertContent() {
+  document.getElementById("default").style.display = "none";
+  document.getElementById("experiences").style.display = "none";
+  document.getElementById("certificates").style.display = "block";
+  document.getElementById("projects").style.display = "none";
+}
+function showProjectsContent() {
+  document.getElementById("default").style.display = "none";
+  document.getElementById("experiences").style.display = "none";
+  document.getElementById("certificates").style.display = "none";
+  document.getElementById("projects").style.display = "block";
+}
+
 function App() {
   return (
     <>
@@ -35,6 +61,35 @@ function App() {
             <a href="#about">
               <p id="label">About</p>
             </a>
+            {/**
+             *
+             *
+             *
+             * */}
+            <div className="nav-about-link-content">
+              <ul>
+                <li>
+                  <a href="#about" onClick={showDefaultContent}>
+                    Default
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" onClick={showExpContent}>
+                    Experiences
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" onClick={showCertContent}>
+                    Certificates
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" onClick={showProjectsContent}>
+                    Projects
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <a href="#skills">

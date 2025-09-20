@@ -4,13 +4,17 @@
   min-height: 100vh;
   padding: 1rem;
   padding-top: 68px;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  place-content: center;
+  /* place-content: center; */
 }
 .about :where(.container) {
   width: clamp(100px, 90vw, 500px);
   padding: 1rem;
+}
+.about :where(.about-container-content) {
+  /* padding: 2.5rem; */
+  flex-grow: 1;
 }
 
 /*  */

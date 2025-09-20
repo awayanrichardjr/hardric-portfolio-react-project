@@ -1,6 +1,10 @@
 import "./App.css";
 import "./root.css";
 import Card from "./card/App";
+import Default from "./default/App";
+import Experiences from "./experiences/App";
+import Certificates from "./certificates/App";
+import Projects from "./projects/App";
 
 function App() {
   return (
@@ -9,21 +13,11 @@ function App() {
         <div className="container">
           <Card />
         </div>
-        <div className="container">
-          <h4 className="croissant-one-regular">Richard D. Awayan Jr.</h4>
-          <p className="description">
-            <q>
-              I am a Frontend Developer passionate about creating clean,
-              responsive, and user-friendly websites. I specialize in building
-              portfolio websites, browsing platforms, and modern responsive
-              layouts that work seamlessly across devices. Currently, I focus on
-              developing website designs provided by designers, turning static
-              visuals into fully functional and interactive web experiences.
-              With a strong emphasis on detail, performance, and usability, I
-              aim to deliver websites that are both visually appealing and
-              highly effective.
-            </q>
-          </p>
+        <div className="container about-container-content">
+          <Default />
+          <Experiences />
+          <Certificates />
+          <Projects />
         </div>
       </section>
     </>
