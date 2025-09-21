@@ -1,6 +1,9 @@
 import "./App.css";
 import "./root.css";
 
+const repo_link = {
+  telehealth: "https://github.com/awayanrichardjr/telehealth_access",
+};
 function App() {
   return (
     <>
@@ -25,10 +28,7 @@ function App() {
               data analytics while creating a solution that addresses the
               increasing demand for technology-driven healthcare services.
             </p>
-            <a
-              href="https://github.com/awayanrichardjr/telehealth_access"
-              target="_blank"
-            >
+            <a href={repo_link.telehealth} target="_blank">
               Github repository
             </a>
           </li>
