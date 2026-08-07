@@ -1,6 +1,6 @@
 import "./App.css";
 import "./root.css";
-import profilePic from "../assets/img/me.jpg";
+import profilePic from "../assets/img/IMG_20260410_081812 - Copy.jpg";
 
 const details = {
   name: "Richard",
