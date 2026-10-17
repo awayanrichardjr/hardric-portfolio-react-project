@@ -7,7 +7,8 @@ const details = {
   profession: "Frontend Developer",
   file_link:
     // "https://drive.google.com/uc?export=download&id=1Eq5gi_scvnn4po6PWAlnaXPLu-1mq17Q",  _old path
-    "https://drive.google.com/uc?export=download&id=1C4fkivnsnlw4iCGHeQu7FvwVMGZxf6zb",
+    // "https://drive.google.com/uc?export=download&id=1C4fkivnsnlw4iCGHeQu7FvwVMGZxf6zb", _old path
+    "https://drive.google.com/uc?export=download&id=1WIuw_8PDnvPFzgEVUjr7E_RQEzdsw8ig",
 };
 
 const cln = {
